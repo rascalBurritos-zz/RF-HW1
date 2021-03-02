@@ -1,0 +1,148 @@
+\documentclass{article}
+
+%font settings
+% \usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{Merriweather}
+\setmathfont[Scale=1.25]{Asana Math}
+
+%figure settings
+\usepackage{graphicx}
+\graphicspath{{../Lab/images/}}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{multicol}
+\usepackage{float}
+
+
+%mathcha includes
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+% \usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+% \usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+
+
+\begin{document}
+\begin{titlepage}
+  \begin{center}
+  \vspace*{1in}    
+  \Huge
+  \textbf{EE3302, Section 306}
+
+  \textbf{Laboratory Fundamentals II}
+  \vspace*{0.25in}    
+
+  \Large
+  Lab Topic: BJT AC Analysis
+
+  Name: Stephen Campbell
+
+  Instructor: Kamran Kiasaleh
+
+  Date : \today
+
+  \end{center}
+\end{titlepage}
+\begin{abstract}
+ In this lab, the AC characteristics and small signal model of the BJT is analyzed,
+ quantified, and measured. First, a common emitter amplifier is designed, constructed
+ and analyzed. The frequency response is measured and its transient characteristics 
+ are recorded. Afterwards, A differential long-tailed pair amplifier was designed
+ and constructed. The characteristics of this system were measured and compared to 
+ the theoretical values.
+\end{abstract}
+\section*{Introduction}
+The design of the common emitter amplifier was performed under the guidance of
+the lab manual and introduction. By using rules of thumbs and performing simulations,
+the circuit with the desired gain and frequency response was specified and constructed.
+The differential amplifier was made with a similar guise. Using the BJT equivalent model 
+with equations listed in the manual, a differential long tailed pair amplifier was
+exhibited was the desired characteristics. The important characteristics of 
+the differential amplifier includes the differential gain as well as the input and 
+output impedances.
+\section*{Procedure}
+The procedure consisted of constructing 2 circuits: a common emitter amplifier, a
+differential amplifier
+\begin{enumerate}
+  \item \textbf{Common Emitter Amplifier}
+
+  The common emitter amplifier designed and simulated in the prelab was constructed with on hand 
+  components. With the amplifier constructed, the network analyzer features of the 
+  ADALM2000 was utilized to characterize the frequency response of the amplifier. 
+  The measured frequency response allowed one to calculate the gain of the amplifier.
+  This measured gain was compared to the theoretical expected value of the gain which
+  was determined by the simulations and circuit analysis. 
+  \item \textbf{Differential Amplifier}
+
+  The differential amplifier designed and simulated in the prelab was constructed with on hand 
+  components. The transient response of the amplifier was measured by applying 2 
+  sinusoids that were out of phase by 180 degrees to the amp inputs and by measured the
+  voltage across the collectors. The input impedance was measured by applying a 
+  differential voltage across the inputs of the amplifier and measured the current 
+  through the inputs.
+\end{enumerate}
+
+\section*{Prelab Simulations and Results}
+
+\section*{Experimental Results}
+\subsection*{Common Emitter Amplifier}
+\begin{figure}[H]
+  \centering 
+  \includegraphics[height=3in]{BJTAMP-Schematic.png} 
+  \caption{ BJT Common Emitter Amplifier Schematic}
+\end{figure}
+\begin{figure}[H]
+  \centering 
+  \includegraphics[width=\textwidth]{BJTAMP-Frequency-Response-Sim-NoLoad.png} 
+  \caption{Simulation of BJT Common Emitter Amplifier Frequency Response}
+\end{figure}
+\begin{figure}[H]
+  \centering 
+  \includegraphics[height=3in]{BJTAMP-FrequencyResponseNoLoad.png} 
+  \caption{Measured BJT Common Emitter Amplifier Frequency Response}
+\end{figure}
+\textbf{
+ Does your experimental results match your simulation results in the
+pre-lab? If not, explain the possible causes for the discrepancy.
+}
+
+\vspace{1em}
+The simulation results match the measured values of the frequency
+response.
+
+
+\subsection*{Differential Amplifier}
+\begin{figure}[H]
+  \centering 
+  \includegraphics[height=3in]{DIFFAMP-MeasuredTransients.png} 
+  \caption{Transient Differential Amplifier Measurements}
+\end{figure}
+% \begin{figure}[H]
+%   \centering 
+%   \includegraphics[height=3in]{} 
+%   \caption{Input Current and Input Voltage of Differential Amplifier}
+% \end{figure}
+
+\textbf{
+Does your measurement of gain and input impedance match the
+theoretical and simulation results? If not, provide possible
+reasons for the discrepancy.
+}
+Through the transient measurement, the gain was recorded as $\approx 4$ which coincides
+phenomenally with the theoretical gain of the amplifier as well as the simulation
+results where the gain was 4. 
+\end{document}
