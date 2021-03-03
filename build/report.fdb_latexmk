@@ -1,13 +1,20 @@
 # Fdb version 3
-["xdvipdfmx"] 1614723709 "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report.xdv" "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report.pdf" "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report" 1614723710
-  "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report.xdv" 1614723709 40364 a20a01e192c19e68f9642f763e8e38fc "xelatex"
+["xdvipdfmx"] 1614794077 "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report.xdv" "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report.pdf" "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report" 1614794079
+  "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report.xdv" 1614794077 109096 7fdcfb0985f057b5f948f56eeb501ab0 "xelatex"
   (generated)
   "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report.pdf"
-["xelatex"] 1614723706 "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/report.tex" "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report.xdv" "report" 1614723710
+["xelatex"] 1614794073 "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/report.tex" "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report.xdv" "report" 1614794079
   "../Lab/images/BJTAMP-Frequency-Response-Sim-NoLoad.png" 1614376229 16004 12b91474f028d30bc59378a483a725ba ""
+  "../Lab/images/BJTAMP-FrequencyResponseLoad.png" 1614792538 33039 6d7a257cb8cb4605ffa1fda3a33f4e9f ""
   "../Lab/images/BJTAMP-FrequencyResponseNoLoad.png" 1614375868 30909 6e6c54d5f16337c6a3b36216ac34684b ""
   "../Lab/images/BJTAMP-Schematic.png" 1614381428 15062 40d64c29de97155ac0782b674d4f0029 ""
   "../Lab/images/DIFFAMP-MeasuredTransients.png" 1614717728 51754 f1ca080d9eb6c1ee6e46020f72af3946 ""
+  "../Prelab/images/BJTAMP-ACsweep-Load.png" 1614793780 53102 fd4569e42a59107c4f77cf1a53cc8087 ""
+  "../Prelab/images/BJTAMP-ACsweep-LoadGain.png" 1614793846 42049 158d4dab6ec48f81f0a4d055456d2513 ""
+  "../Prelab/images/BJTAMP-ACsweep-NoLoad.png" 1614100816 62595 4339e30f31f4e5959b210a407d497443 ""
+  "../Prelab/images/BJTAMP-ACsweep-NoLoadGain.png" 1614101047 63990 02a4f6aa8e2cc8131aa35aa1f0e8f1ea ""
+  "../Prelab/images/BJTAMP-Schematic-NoLoad.png" 1614633050 14867 40c8379285e82589192d4d0d06c59366 ""
+  "../Prelab/images/Eq-BJT-Schematic.png" 1614276371 10032 240423fe1dc6a5b3eb156abf25f89777 ""
   "C:/Users/kingi/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1612654235 23215538 737ca71c44deb26d2bcebf7056a1e2cb ""
   "C:/Users/kingi/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi6.tfm" 1136765053 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "C:/Users/kingi/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi7.tfm" 1136765053 1528 e2423ae06dc7dee599cceb79d1c9dc32 ""
@@ -144,13 +151,13 @@
   "C:/Users/kingi/AppData/Local/Programs/MiKTeX/tex/latex/was/gensymb.sty" 1081526300 4755 29d19942d7123701aa6a3876b9ba11b1 ""
   "C:/Users/kingi/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1463131981 57049 34128738f682d033422ca125f82e5d62 ""
   "C:/Users/kingi/AppData/Local/Programs/MiKTeX/tex/xelatex/xetexconfig/geometry.cfg" 1169251881 322 f4a6234bc28bf70659404393c15d3854 ""
-  "build/report.aux" 1614723709 613 c25f771415a090c57b345b7084bd5659 "xelatex"
-  "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report.aux" 1614723709 613 c25f771415a090c57b345b7084bd5659 ""
-  "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/report.tex" 1614723701 4949 971a0b5ca2d9770f9446203ad62a4948 ""
-  "report.tex" 1614723701 4949 971a0b5ca2d9770f9446203ad62a4948 ""
+  "build/report.aux" 1614794077 1728 bca46f81260fbb6458fd5732d22ff174 "xelatex"
+  "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report.aux" 1614794077 1728 bca46f81260fbb6458fd5732d22ff174 ""
+  "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/report.tex" 1614794072 13740 9452efbfe450b6f66e96fd43232a86b5 ""
+  "report.tex" 1614794072 13740 9452efbfe450b6f66e96fd43232a86b5 ""
   (generated)
-  "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report.xdv"
-  "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report.log"
-  "build/report.log"
-  "build/report.xdv"
   "build/report.aux"
+  "build/report.log"
+  "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report.log"
+  "c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/build/report.xdv"
+  "build/report.xdv"

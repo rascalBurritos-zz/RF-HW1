@@ -9,7 +9,7 @@
 
 %figure settings
 \usepackage{graphicx}
-\graphicspath{{../Lab/images/}}
+\graphicspath{{../Lab/images/},{../Prelab/images/}}
 \usepackage[letterpaper, margin=1in]{geometry}
 \usepackage{multicol}
 \usepackage{float}
@@ -97,6 +97,209 @@ differential amplifier
 \end{enumerate}
 
 \section*{Prelab Simulations and Results}
+\subsection*{Problem 1}
+\textbf{
+Repeat example 1, but assume an amplifier with a gain of -8 which has identical 3
+dB corner frequencies of 10 kHz for high pass coupling at the input and output.
+Use a power supply of 5 volts.}
+
+
+\begin{align*}
+G & =-8\\
+f_{i} & =f_{o} =10^{4}\text{Hz}\\
+V_{CC} & =5\text{V}
+\end{align*}
+\begin{align*}
+ & \text{Two Arbitrary Initial Conditions}\\
+R_{C} & =800\Omega \\
+R_{2} & =1000\Omega \\
+ & \\
+ & \text{Now,}\\
+R_{E} & =\frac{R_{C}}{| G| }\\
+R_{E} & =100\\
+ & \text{Using a load line 
+to determine R1}\\
+I_{C} & =-\frac{1}{R_{E} +R_{C}}( V_{CE} -V_{CC})\\
+y_{\text{int}} & =\frac{V_{CC}}{R_{E} +R_{C}}\\
+y_{\text{int}} & =\frac{5}{900} =5.55\ 10^{-3}\\
+ & \text{Arbitrary Decision
+on load line}
+\end{align*}
+
+
+
+
+\begin{align*}
+V_{CE} & =1.5\text{V}\\
+I_{B} & =20\times 10^{-6}\\
+ & \text{Now,}\\
+I_{C} & =3\times 10^{-3}\text{A}\\
+\beta  & =\frac{3\times 10^{-3}}{20\times 10^{-6}}\\
+\beta  & =150\\
+\beta  & \gg 1\\
+I_{E} & =I_{C} +I_{B}\\
+I_{E} & =3\times 10^{-3} +20\times 10^{-6}\\
+I_{E} & =3.02\times 10^{-3}\\
+V_{B} & =0.7+R_{E} I_{E}\\
+V_{B} & =0.7+( 100) 3.02\times 10^{-3}\\
+V_{B} & =1.002\\
+\frac{V_{CC} -V_{B}}{R_{1}} & =I_{B} +\frac{V_{B}}{R_{2}}\\
+\frac{5-1.002}{R_{1}} & =20\times 10^{-6} +\frac{1.002}{1000}\\
+\frac{3.998}{R_{1}} & =1.022\ \times 10^{-3}\\
+R_{1} & =3911.94\Omega 
+\end{align*}
+\begin{align*}
+ & \text{To determine cutoff frequency for 
+input coupling cap}\\
+R_{ei} & =R_{1} \parallel R_{2} \parallel \beta R_{e}\\
+f_{i} & =\frac{1}{2\pi R_{ei} C_{i}}\\
+C_{i} & =\frac{1}{2\pi R_{ei} f_{i}}\\
+R_{ei} & =\left(\frac{1}{3900} +\frac{1}{1000} +\frac{1}{15000}\right)^{-1}\\
+R_{ei} & =755.814\\
+C_{i} & =\frac{1}{2\pi ( 755.814)\left( 10^{4}\right)}\\
+C_{i} & =2.1\ \times 10^{-8}\text{F}\\
+ & \text{Now the output cap}\\
+f_{o} & =\frac{1}{2\pi ( R_{C} +R_{L}) C_{0}}\\
+C_{0} & =\frac{1}{2\pi ( R_{C} +R_{L}) f_{0}}\\
+C_{0} & =\frac{1}{2\pi ( 850) 10^{4}}\\
+C_{0} & =1.87241\times 10^{-8}\text{F}
+\end{align*}
+In summary,
+
+
+\begin{align*}
+R_{1} & =3911.94\\
+R_{2} & =1000\Omega \\
+R_{C} & =800\Omega \\
+R_{E} & =100\Omega \\
+C_{i} & =2.1\ \times 10^{-8}\text{F}\\
+C_{o} & =1.87241\times 10^{-8}\text{F}
+\end{align*}
+
+
+\subsection*{Problem 2}
+\textbf{
+Use PSpice to model the amplifier in part 1. Do an AC sweep of the circuit for a
+frequency range 1 kHz-40 kHz. Show the gain of the circuit over this frequency
+band. Comment on your observation (make sure that you use a small enough input
+signal that does not result in a nonlinear behavior for the amplifier). 
+}
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=3in]{BJTAMP-Schematic-NoLoad.png}
+  \caption{BJT Amplifier Circuit Schematic}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=3in]{BJTAMP-ACsweep-NoLoad.png}
+  \caption{Input and Output Voltages of AC sweep (1kHz to 40kHz) of BJT amp with no load }
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=3in]{BJTAMP-ACsweep-NoLoadGain.png}
+  \caption{Gain of BJT Amp  no load : AC sweep (1kHz to 40kHz) }
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=3in]{BJTAMP-ACsweep-Load.png}
+  \caption{Input and Output Voltages of AC sweep (1kHz to 40kHz) of BJT amp with load }
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=3in]{BJTAMP-ACsweep-LoadGain.png}
+  \caption{Gain of BJT Amp with load : AC sweep (1kHz to 40kHz) }
+\end{figure}
+
+% Without a load, the gain of the Amp seems to increase to the desired
+% gain through increasing the frequency. 
+At around 40kHz the gain seems to be around -8.  Not evident on these graphs, is the 180 degree phase
+difference. This would make the +8 apparent gain to a -8 gain.With the load, the gain 
+seems to max out at around -6dB. The high pass effects are as desired.
+
+\subsection*{Equivalent BJT}
+\textbf{
+Find an equivalent model for your BJT by examining the datasheet for 2N3904.
+You should be able to fund Cu and Cpi from the datasheet. They are named
+differently in the datasheet. Use the operating point (iC) obtained in steps 1 and 2.
+For VA use the IV characteristics of the BJT which you had found in the previous
+experiment
+}
+
+On the ST datasheet for the 2N3904 the collector base capacitance
+ is 4pF and the emitter base capacitance is 18pF. The collector 
+ base capacitance is the same as $C_{\mu}$ and the emitter base 
+ capacitance is the same as $C_{\pi}$.
+% On the datasheet, Input Capacitance = 8pF, Output Capacitance 4pF
+
+\begin{align*}
+C_{\pi } & =18\times 10^{-12}\text{F}\\
+C_{\mu } & =4\times 10^{-12}\text{F}\\
+g_{m} & =\frac{I_{C}}{V_{T}}\\
+g_{m} & =\frac{3\times 10^{-3}}{0.026}\\
+g_{m} & =0.115385\\
+r_{e} & =g^{-1}_{m}\\
+r_{e} & =8.66664\\
+r_{\pi } & =\frac{\beta }{g_{m}}\\
+r_{\pi } & =\frac{150}{0.115385}\\
+r_{\pi } & =1300
+\end{align*}
+
+\begin{align*}
+ & \text{Points from the Measured } I_C \text{ vs. } V_{CE}\\
+( V_{CE} ,I_{C}) & =( 0.788,0.009759)\\
+( V_{CE} ,I_{C}) & =( 3.403,0.009997)\\
+m & =\frac{0.009997-0.009759}{3.403-0.788}\\
+m & =9.101\times 10^{-5}\\
+y & =m( x-V_{a}) +y_{0}\\
+y & =mx-mV_{a} +y_{0}\\
+y-mx & =-mV_{a} +y_{0}\\
+( 0.009759) -\left( 9.101\times 10^{-5}\right)( 0.788) & =-9.101\times 10^{-5} V_{a} +y_{0}\\
+( 0.009997) -\left( 9.101\times 10^{-5}\right)( 3.403) & =-9.101\times 10^{-5} V_{a} +y_{0}\\
+9.68728\times 10^{-3} & =-9.101\times 10^{-5} V_{a} +y_{0}\\
+9.68729\times 10^{-3} & =-9.101\times 10^{-5} V_{a} +y_{0}\\
+V_{a} & =106.438\\
+y_{0} & =9.68728\times 10^{-3}\\
+r_{0} & =\frac{V_{A}}{I_{C}}\\
+r_{0} & =\frac{106.438}{3\times 10^{-3}}\\
+r_{0} & =35.479\text{k} \Omega 
+\end{align*}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=3in]{Eq-BJT-Schematic.png}
+  \caption{Equivalent BJT circuit schematic}
+\end{figure}
+
+\subsection*{DIBO Differential Amp}
+
+\textbf{
+Use PSpice to model the differential amplifier circuit shown in Fig. 4 in DIBO mode.
+Use 2N3904 BJTs and use appropriate values for resistors (you can choose the
+values that will not lead to excessive gain and saturation) to demonstrate that the
+circuit provides differential amplification. Use Vcc = 5 and Vee = 5. Use a pair of
+sinusoids with opposing polarity (180 degree phase shift) as the inputs to the
+differential amplifier. Recall from the theory Ic 
+is needed to compute re
+. Make sure that the conditions set in the analysis of DIBO circuit are satisfied. 
+Assume RS1 = RS2 = 50 Ohm.
+}
+
+\begin{align*}
+ & \text{Conditions}\\
+R_{1} & =R_{2} =R_{L}\\
+r_{e1} & =r_{e2} =r_{e}\\
+\frac{R_{s1}}{\beta } ,\frac{R_{s2}}{\beta } & \ll R_{3} ,r_{e}\\
+ & \text{Design}\\
+i_{C} & =\frac{V_{ee} -V_{BE}}{2R_{3}}\\
+R_{3} & =\frac{V_{ee} -V_{BE}}{2i_{C}}\\
+i_{C} & \rightarrow 2\times 10^{-3}\\
+R_{3} & \rightarrow \frac{5-0.7}{2\left( 2\times 10^{-3}\right)} =1075\\
+g_{m} & =\frac{I_{C}}{V_{T}} =\frac{2\times 10^{-3}}{0.026}\\
+g_{m} & =7.692\times 10^{-2}\\
+r_{e} & =\frac{1}{g_{m}} =\frac{1}{7.692\times 10^{-2}} =13\\
+\text{Gain} & =4\\
+R_{L} & =R_{1} =R_{2} =13\cdot 4=52
+\end{align*}
 
 \section*{Experimental Results}
 \subsection*{Common Emitter Amplifier}
@@ -115,6 +318,14 @@ differential amplifier
   \includegraphics[height=3in]{BJTAMP-FrequencyResponseNoLoad.png} 
   \caption{Measured BJT Common Emitter Amplifier Frequency Response}
 \end{figure}
+
+\begin{figure}[H]
+  \centering 
+  \includegraphics[height=3in]{BJTAMP-FrequencyResponseLoad.png} 
+  \caption{Measured BJT Common Emitter Amplifier Frequency Response with 50$\Omega$ Load}
+\end{figure}
+
+
 \textbf{
  Does your experimental results match your simulation results in the
 pre-lab? If not, explain the possible causes for the discrepancy.
@@ -122,7 +333,20 @@ pre-lab? If not, explain the possible causes for the discrepancy.
 
 \vspace{1em}
 The simulation results match the measured values of the frequency
-response.
+response without load. With a load the expected values is also seen.
+In the loaded case, the gain of the amplifier is the output impedance over
+the equivalent emitter resistance. In this case that is approximately $50/100$,
+the the expected gain is 0.5 or -6.02dB. The measurements are roughly on the same 
+order of this predicted gain. Some discrepancies in the measurement could be due to:
+\begin{itemize}
+  \item Resistor tolerances in both the load and emitter legs
+  \item Large deviation from the operating point
+  \item The capacitive effects in both the equivalent model and in the coupling
+  capacitors
+\end{itemize}
+
+
+
 
 
 \subsection*{Differential Amplifier}
@@ -142,7 +366,16 @@ Does your measurement of gain and input impedance match the
 theoretical and simulation results? If not, provide possible
 reasons for the discrepancy.
 }
+
+\vspace{1em}
 Through the transient measurement, the gain was recorded as $\approx 4$ which coincides
 phenomenally with the theoretical gain of the amplifier as well as the simulation
-results where the gain was 4. 
+results where the gain was 4. The theoretical input impedance of the differential amplifier 
+is  $R_{\text{in}} = 2\beta r_e$. This corresponds to $\approx 2(225)(13) = 5850$. The
+measured value of the input impedance was calculated with a 100mV input voltage and a
+18.6$\mu$A current. This yields a measured input impedance of $\approx 5347.58 \Omega$.
+The measured values closely matches this simulated and theoretical results. However,
+the measurement of this value was highly sensitive to the resistor values, the operating 
+point, the similarity of the BJTs, and many other factors. 
+
 \end{document}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2021.2.6)  2 MAR 2021 16:21
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2021.2.6)  3 MAR 2021 11:54
 entering extended mode
 **"c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/report.tex"
 ("c:/Users/kingi/Documents/UTD/EE 3202/Lab 4 BJTAC/Report/report.tex"
@@ -895,25 +895,64 @@ LaTeX Font Info:    Font shape `TU/AsanaMath(3)/m/n' will be
 (Font)              scaled to size 7.49927pt on input line 39.
 [1
 
-]
+] [1] [2]
+File: ../Prelab/images/BJTAMP-Schematic-NoLoad.png Graphic file (type bmp)
+<../Prelab/images/BJTAMP-Schematic-NoLoad.png>
+File: ../Prelab/images/BJTAMP-ACsweep-NoLoad.png Graphic file (type bmp)
+<../Prelab/images/BJTAMP-ACsweep-NoLoad.png>
+
+Overfull \hbox (26.88896pt too wide) in paragraph at lines 194--195
+ [][] 
+ []
+
+[3]
+File: ../Prelab/images/BJTAMP-ACsweep-NoLoadGain.png Graphic file (type bmp)
+<../Prelab/images/BJTAMP-ACsweep-NoLoadGain.png>
+
+Overfull \hbox (32.17091pt too wide) in paragraph at lines 199--200
+ [][] 
+ []
+
+File: ../Prelab/images/BJTAMP-ACsweep-Load.png Graphic file (type bmp)
+<../Prelab/images/BJTAMP-ACsweep-Load.png>
+
+Overfull \hbox (45.62277pt too wide) in paragraph at lines 204--205
+ [][] 
+ []
+
+[4]
+File: ../Prelab/images/BJTAMP-ACsweep-LoadGain.png Graphic file (type bmp)
+<../Prelab/images/BJTAMP-ACsweep-LoadGain.png>
+
+Overfull \hbox (48.61758pt too wide) in paragraph at lines 209--210
+ [][] 
+ []
+
+[5] [6]
+File: ../Prelab/images/Eq-BJT-Schematic.png Graphic file (type bmp)
+<../Prelab/images/Eq-BJT-Schematic.png>
+ [7] [8]
 File: ../Lab/images/BJTAMP-Schematic.png Graphic file (type bmp)
 <../Lab/images/BJTAMP-Schematic.png>
 File: ../Lab/images/BJTAMP-Frequency-Response-Sim-NoLoad.png Graphic file (type bmp)
 <../Lab/images/BJTAMP-Frequency-Response-Sim-NoLoad.png>
- [1]
+ [9]
 File: ../Lab/images/BJTAMP-FrequencyResponseNoLoad.png Graphic file (type bmp)
 <../Lab/images/BJTAMP-FrequencyResponseNoLoad.png>
- [2]
+ [10]
+File: ../Lab/images/BJTAMP-FrequencyResponseLoad.png Graphic file (type bmp)
+<../Lab/images/BJTAMP-FrequencyResponseLoad.png>
+ [11]
 File: ../Lab/images/DIFFAMP-MeasuredTransients.png Graphic file (type bmp)
 <../Lab/images/DIFFAMP-MeasuredTransients.png>
- [3] ("c:/Users\kingi\Documents\UTD\EE 3202\Lab 4 BJTAC\Report\build\report.aux") ) 
+ [12] ("c:/Users\kingi\Documents\UTD\EE 3202\Lab 4 BJTAC\Report\build\report.aux") ) 
 Here is how much of TeX's memory you used:
- 24382 strings out of 414493
- 535714 string characters out of 2903264
- 946761 words of memory out of 3000000
- 41231 multiletter control sequences out of 15000+200000
- 536871 words of font info for 72 fonts, out of 3000000 for 9000
+ 24440 strings out of 414493
+ 537823 string characters out of 2903264
+ 956781 words of memory out of 3000000
+ 41268 multiletter control sequences out of 15000+200000
+ 536887 words of font info for 74 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,6n,112p,475b,506s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,11n,112p,475b,506s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on c:/Users\kingi\Documents\UTD\EE 3202\Lab 4 BJTAC\Report\build\report.xdv (4 pages, 40364 bytes).
+Output written on c:/Users\kingi\Documents\UTD\EE 3202\Lab 4 BJTAC\Report\build\report.xdv (13 pages, 109096 bytes).

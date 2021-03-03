@@ -236,8 +236,15 @@ INPUT C:\Users\kingi\AppData\Local\Programs\MiKTeX\tex\latex\siunitx\siunitx-abb
 INPUT C:\Users\kingi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi7.tfm
 INPUT C:\Users\kingi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
 OUTPUT c:\Users\kingi\Documents\UTD\EE 3202\Lab 4 BJTAC\Report\build\report.xdv
+INPUT ..\Prelab\images\BJTAMP-Schematic-NoLoad.png
+INPUT ..\Prelab\images\BJTAMP-ACsweep-NoLoad.png
+INPUT ..\Prelab\images\BJTAMP-ACsweep-NoLoadGain.png
+INPUT ..\Prelab\images\BJTAMP-ACsweep-Load.png
+INPUT ..\Prelab\images\BJTAMP-ACsweep-LoadGain.png
+INPUT ..\Prelab\images\Eq-BJT-Schematic.png
 INPUT ..\Lab\images\BJTAMP-Schematic.png
 INPUT ..\Lab\images\BJTAMP-Frequency-Response-Sim-NoLoad.png
 INPUT ..\Lab\images\BJTAMP-FrequencyResponseNoLoad.png
+INPUT ..\Lab\images\BJTAMP-FrequencyResponseLoad.png
 INPUT ..\Lab\images\DIFFAMP-MeasuredTransients.png
 INPUT c:\Users\kingi\Documents\UTD\EE 3202\Lab 4 BJTAC\Report\build\report.aux
