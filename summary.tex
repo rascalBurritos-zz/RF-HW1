@@ -1,5 +1,9 @@
 \documentclass{article}
 
+
+%misc
+\usepackage{hyperref}
+
 %font settings
 \usepackage{fontspec}
 \usepackage{unicode-math}
@@ -34,67 +38,62 @@
 
 
 \begin{document}
-\begin{titlepage}
-  \begin{center}
-  \vspace*{1in}    
-  \Huge
-  \textbf{EE4368, Section 001}
 
-  \textbf{RF Circuit Design Principles}
-  \vspace*{0.25in}    
+\begingroup  
+    \centering
+    \LARGE HW Set \#1\\[0.5em]
+    \large \today\\[0.5em]
+    \large Stephen Campbell\par
+    \large Dr. Lehmann \par
+    \large EE 4368 RF Design Principles\par
+\endgroup
+\rule{\textwidth}{0.4pt}
 
-  \Large
-  HW Set #1 %LAB TITLE%!!!!!!!!!!!!!!!!!
 
-  Name: Stephen Campbell
-
-  Instructor: Randall Lehmann
-
-  Date : \today
-
-  \end{center}
-\end{titlepage}
-% \begin{abstract}
-% \end{abstract}
 \section*{5G Testbed at the University of Tennessee, Knoxville}
 
 
-%Defitinions
+%Definitions
 %source https://spectrum.ieee.org/5g-bytes-millimeter-waves-explained#toggle-gdpr
-millimeter wave spectrum: Refers to a new band of frequencies that wireless
-technology manufactures are expirementing with in order to overcome the satuartion
-that exists on historiccally used wirless frequency bands. These waves are 
-typically broadcast between 30 and 300 GHz
+\subsection*{Definitions}
+\begin{itemize}
+  \item \textbf{Millimeter wave spectrum:}
 
+  Refers to a band of frequencies that wireless
+  technology manufactures are experimenting with in order to overcome the saturation
+  that exists on historically used wireless frequency bands. These waves are 
+  typically broadcast between 30 and 300 GHz
+  \item \textbf{Multi-Access Edge Computing}
 
-Multi-Access Edge Computing
+  The practice of placing computing infrastructure physically closer to the end user to 
+  gain ultra-low latency. "Edge" refers to the fact that these systems are not necessary
+  to core infrastructure i.e. systems built with edge infrastructure are simply there to
+  boost a system's responsiveness.
+\end{itemize}
+
 % source https://www.ibm.com/cloud/blog/what-is-multi-access-edge-computing
-The practice of placing computing infrastructure physically closer to the end user to 
-gain ultra-low latency. "Edge" refers to the fact that these systems are not necessary
-to core infrastructure i.e. systems built with edge infrastructure are simply there to
-boost a system's responsivness.
 
 
+\subsection*{Summary}
 
-% article source
-https://about.att.com/story/2021/the_university_of_tennessee_5g.html
+% article source 
 %paragraph
-AT\&T is colloborating with the University of Tennesse, Knoxville (U.T.) to bring millimeter wave spectrum
+AT\&T is collaborating with the University of Tennessee, Knoxville (U.T.) to bring millimeter wave spectrum
 (5G+) cell technology and Multi-Access Edge Computing to the University Campus. AT\&T claims this will have major 
 implications for the region and beyond : inspire agricultural innovation, enhance academic experiences, and provide "warfighters"
 the ability to "see through" walls. Farmer's can leverage this increased connectivity to boost 
 their real time insights into their "soil and crop health".
 Students at UT  can participate in 5G+ enabled learning experiences with both
-augmented reality and virtualy reality.These digital experiences 
+augmented reality and virtually reality.These digital experiences 
 can emulate dangerous or impractical scenarios that could be potential useful
-for education e.g. touring a Nuclear Power Plant.  
-Additionally, AT&T noted that the 5G+ infrastructure
+for education e.g. touring a nuclear power plant.  
+Additionally, AT\&T noted that the 5G+ infrastructure
 will enable machine learning algorithms to sift through students' class engagement and biometric data to evaluate performance and optimize the learning experience for the student.
 The military hopes to utilize the millimeter spectrum with radar technology. This application would allows the militants to take pictures through walls and communicate
 that information to allies. Overall,
-AT/&T and a cross functional team of professors at U.T.
-will research, expiriment, and test a real world implementation of
-5G+ and Multi-Access Edge Computing Technology.
+AT\&T and a cross functional team of professors at U.T.
+will research, experiment, and test a real world implementation of
+5G+ and Multi-Access Edge Computing Technology to gain insight into the cutting edge.
 
 % \subsection*{Personal Thoughts}
 % Overall, I feel this net benefit to society; Enabling enhanced connectivity can be incredibly beneificial for a rural area.
@@ -102,42 +101,67 @@ will research, expiriment, and test a real world implementation of
 % Utilizing this technology to analyze student biometric data immidietly triggers privacy concerns. The intention, personalizing learning experience,
 % seems not immeditely related. 
 
+\subsection*{Source}
+
+\begin{itemize}
+  \item Title: The University of Tennessee and AT\&T are Bringing 5G to the
+University’s Knoxville Campus to Power Research, Education and
+Innovation
+  \item Name of News Media: AT\&T Corporate Communications
+  \item Author: Andrea Huguely
+  \item Date: August 17, 2021
+  \item Website Link: \url{https://about.att.com/story/2021/the_university_of_tennessee_5g.html}
+\end{itemize}
+
 \section*{NFC Textiles}
 
 %definitions
 
-Near Field Communication (NFC)
+\subsection*{Definitions}
+
 %source https://en.wikipedia.org/wiki/Near-field_communication
-Inductive coupling based technology which allows for contactless exchange of data over <2cm. 
-It utilizes the frequency 13.56 MHz to interface at data rates between 106-424 kbit/s.
+\begin{itemize}
+  \item \textbf{Near Field Communication (NFC):}
+
+  Inductive coupling based technology which allows for contactless exchange of data <2cm. 
+  It utilizes the frequency 13.56 MHz to interface at data rates between 106-424 kbit/s.
+\end{itemize}
 
 
 %article source : https://www.rfidjournal.com/researchers-develop-smart-furniture-with-flexible-nfc
-Carnegie Mellon's WiTech Lab are expirementing with variations of a Near Field Communication (NFC) reading system.
+
+\subsection*{Summary}
+Carnegie Mellon's WiTech Lab are experimenting with variations of a Near Field Communication (NFC) reading system.
 Traditionally, NFC systems have a wireless range of <2cm; WiTech's system utilizes a "beamforming" algorithm
 which allows their detection system to have a range of 20cm.
 Benefitting from this range, their system allows 3D "localization" of NFC tags and other conductive objects. 
-This localization elaborates the 3D position and
-postures of these objects.
-Their initial application of WiTech's expirimentation is to have a couch equipped with textile 
-antennae and use it as a long range NFC detector. 
+This localization elaborates the 3D position 
+of these objects in space.
+WiTech's initial application of this experimentation is a couch equipped with textile 
+antennae used as a long range NFC detector. 
 With this information in this application, their system can identify someone's posture e.g lying down 
-or sitting on a couch.
+or sitting on a couch to trigger different actions.
 WiTech's technique uses a "blind beamforming" algorithm to detect conductive object that are 
-not NFT tags. More sophisiticated alogorithms could be utlized with NFT tags that could
-allow for users to be identified or smart home actions to be triggered. WiTech's team iterates that
+not NFT tags. More sophisticated algorithms could be utilized with NFT tags that could
+allow for users to be uniquely identified or personalized smart home actions to be triggered. WiTech's team iterates that
 further optimizations can be performed to enhance the system. Namely, 
 increasing the 20cm range and implementing a 
-form of encryption for bolster the system's security.
+form of encryption to bolster the system's security.
 
-
+\subsection*{Source}
+\begin{itemize}
+  \item Title: Researchers Develop Smart Furniture with Flexible NFC
+  \item Name of News Media: RFID Journal
+  \item Author: Claire Swidberg
+  \item Date: August 18, 2021
+  \item Website Link: \url{https://www.rfidjournal.com/researchers-develop-smart-furniture-with-flexible-nfc}
+\end{itemize}
 
 \section*{Shielding Ultracold Molecules with Microwaves}
 
-
-%article source https://phys.org/news/2021-08-shielding-ultracold-molecules-microwaves.html
+\subsection*{Summary}
 Quantum technologies like quantum computing and quantum simulation 
-utilize so called "ultracold molecules". 
+utilize so called "ultracold molecules".
 A key drawback to these molecules is that molecule-molecule
 collision effectively eliminates these molecules' effectiveness.
 Reducing these collisions is one of the paramount challenges that 
@@ -145,12 +169,21 @@ quantum technology needs to overcome in order to be useful.
 An international team of researchers has shown that these collisions
 can be reduced by "guiding the interaction between molecules using
 microwaves". These dipole moments of these molecules have 2 major practical interactions.
-They can oscillate with lab exposed microwaves and adjacent molecules can interact with one another
-causing repulsion or attraction. With these interactions, the researchs engineered a method
-to repel individual calcium monofluoried molecules that at 100 $\mu$K. This reduced the collisions 
+They can oscillate with lab controlled microwaves and adjacent molecules can interact with one another
+causing repulsion or attraction. With these interactions, the researchers engineered a method
+to repel individual calcium monofluoride molecules that at 100 $\mu$K. This reduced the collisions 
 and associated loss rate six fold. Furthermore, this microwave "shielding" 
-has been show to boost elastic collistions 17-fold. These elastic collisions 
+has been show to boost elastic collisions 17-fold. This shielding and elastic collisions 
 are beneficial for further cooling making the goal of a ultracold molecule
 gas even closer to realization.
+
+\subsection*{Source}
+\begin{itemize}
+  \item Title: Shielding ultracold molecules with microwaves
+  \item Name of News Media: Phys.org
+  \item Author: Radboud University
+  \item Date: August 13, 2021 
+  \item Website Link: \url{https://phys.org/news/2021-08-shielding-ultracold-molecules-microwaves.html}
+\end{itemize}
 
 \end{document}
